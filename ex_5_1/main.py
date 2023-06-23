@@ -2,9 +2,9 @@
 count = 0
 total = 0.0
 
-while True :
+while True:
     sval = input("Enter a Number: ")
-    if sval == "done" :
+    if sval.lower() == "done":
         break
     try:
         fval = float(sval)
@@ -14,5 +14,10 @@ while True :
     total = total + fval
     count = count + 1
 
-print("\nAll done!\n")
-print(total, count, total/count)
+try:
+    med = total/count
+except:
+    med = 0.0
+
+print("done!\n")
+print(total, count, med)
