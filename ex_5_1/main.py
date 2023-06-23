@@ -20,4 +20,4 @@ except:
     med = 0.0
 
 print("done!\n")
-print(total, count, med)
+print("total: ", total, "count: ", count, "media", med)
