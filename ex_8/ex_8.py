@@ -2,7 +2,7 @@
 fh = open("mbox-short.txt")
 
 for line in fh:
-#    if line == "\n" :
+#    if line.strip == "" :
 #        continue
     wds = line.rstrip().split()
 
