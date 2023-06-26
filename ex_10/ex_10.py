@@ -9,6 +9,7 @@ for line in fh:
     for w in wds:
         dic[w] = dic.get(w, 0) + 1
 
+#list comprehension
 l = sorted([(y, x) for x, y in dic.items()], reverse=True)
 
 for v, k in l[:5]:
